@@ -28,7 +28,7 @@ function UserDetails({name, email, contact, roles, login, status, logo}) {
         <div className='flex items-center gap-[4vw]'>
             <div className='flex flex-col '>
                 <span className='text-black text-[1vw]'>{name}</span>
-                <span className='text-gray-400 text-[0.5vw]'>{email}</span>
+                <span className='text-gray-400 text-[0.8vw]'>{email}</span>
             </div>
             <div>
                 {
@@ -39,12 +39,12 @@ function UserDetails({name, email, contact, roles, login, status, logo}) {
 
         {/* contact */}
         <div className='w-[10vw] text-center'>
-            <span className='text-[0.5vw]'>{contact}</span>
+            <span className='text-[0.8vw]'>{contact}</span>
         </div>
 
         {/* roles */}
         <div className='w-[20vw] ml-[2vw]'>
-            <span className='text-[0.5vw] flex flex-wrap'>
+            <span className='text-[0.8vw] flex flex-wrap'>
                 {
                     roles.map(({name, bgc, color}) => {
                         return (
@@ -59,8 +59,8 @@ function UserDetails({name, email, contact, roles, login, status, logo}) {
 
         {/* login time */}
 
-        <div className='w-[10vw] text-center'>
-            <span className='text-[0.2vw] opacity-75'>{login}</span>
+        <div className='w-[10vw] text-center text-[0.8vw]'>
+            <span className='opacity-75'>{login}</span>
         </div>
 
         {/* status */}

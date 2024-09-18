@@ -196,7 +196,7 @@ function User() {
       </div>
 
       <div>
-        <div className='flex bg-[#e0d3f3] uppercase font-inter font-medium text-[0.6vw] text-[#5e3a7a] p-3'>
+        <div className='flex bg-[#e0d3f3] uppercase font-inter font-medium text-[0.8vw] text-[#5e3a7a] p-3'>
             <h6 className='pr-[15vw]'>USER</h6>
             <h6 className='pr-[4vw]'>CONTACT NO.</h6>
             <h6 className='pr-[15vw]'>ASSIGNED ROLES</h6>
