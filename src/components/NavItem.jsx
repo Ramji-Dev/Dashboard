@@ -3,11 +3,9 @@ import SubMenu from './SubMenu';
 
 function NavItem({name, data, logo}) {
 
-    const [ShowMenu, setShowMenu] = useState(false);
     const [isActive, setIsAcive] = useState(false);
 
     const handleMenu = () => {
-        setShowMenu(!ShowMenu);
         setIsAcive(!isActive)
     }
 
@@ -22,7 +20,7 @@ function NavItem({name, data, logo}) {
 
                 <div className='flex flex-col ml-[3vw] pl-[1vw] border-l-2 border-gray-300 my-[0.5vw]'>
                     {
-                        ShowMenu && data?.map((item, index) => {
+                        isActive && data?.map((item, index) => {
                             return (
                                 <div key={index}>
                                     <SubMenu item={item} index={index} />
